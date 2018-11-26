@@ -27,10 +27,12 @@ ____
 > 使用baidu语法爬虫从搜索baidu搜索引擎抓取链接, 
 定义爬行1-10页,并使用插件metinfo_sql来对每个链接进行漏洞检测,
 并输出保存到metinfo_pass.txt
+
 `python3 batch.py -k "inurl:/news/shownews.php?lang=cn&id=" -p 2 -e baidu -l metinfo_sql -o metinfo_password.txt`
 ![frameworkpng01](/png/01.png)
 
 > 使用本地已保存的txt里的url进行漏洞检测
+
 `python3 batch.py -f metinfo.txt -l metinfo_sql -o metinfo_password.txt`
 
 ___
