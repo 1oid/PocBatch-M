@@ -2,9 +2,10 @@
 ____
 ## 简介:
 > 插件化批量URL漏洞扫描器/由[ShellFrameworkd](https://github.com/1oid/Shell-Frameworkd)改写兼容
+
 > 文档移步[ShellFrameworkd的README.md](https://github.com/1oid/Shell-Frameworkd/blob/master/README.md)
 
-* 参数说明
+## 参数说明
 
         Usage: framework.py -k "inurl:/news/shownews.php?lang=cn&id=" -p 2 -e baidu -l metinfo_sql
 
