@@ -2,8 +2,7 @@
 ____
 ## 简介:
 > 插件化批量URL漏洞扫描器/由[ShellFrameworkd](https://github.com/1oid/Shell-Frameworkd)改写兼容
-
-> 文档移步[ShellFrameworkd的README.md](https://github.com/1oid/Shell-Frameworkd/blob/master/README.md)
+  文档移步[ShellFrameworkd的README.md](https://github.com/1oid/Shell-Frameworkd/blob/master/README.md)
 
 ## 参数说明
 
@@ -28,10 +27,11 @@ ____
 > 使用baidu语法爬虫从搜索baidu搜索引擎抓取链接, 
 定义爬行1-10页,并使用插件metinfo_sql来对每个链接进行漏洞检测,
 并输出保存到metinfo_pass.txt
+`python3 batch.py -k "inurl:/news/shownews.php?lang=cn&id=" -p 2 -e baidu -l metinfo_sql -o metinfo_password.txt`
 ![frameworkpng01](/png/01.png)
 
 > 使用本地已保存的txt里的url进行漏洞检测
-![frameworkpng02](/png/02.png)
+`python3 batch.py -f metinfo.txt -l metinfo_sql -o metinfo_password.txt`
 
 ___
 ## 说明: 移除oshadan, zoomeye
