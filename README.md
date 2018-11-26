@@ -1,4 +1,5 @@
 ### PocBatch-M
+![](https://img.shields.io/badge/program-Python3-blue.svg)
 ____
 ## 简介:
 > 插件化批量URL漏洞扫描器/由[ShellFrameworkd](https://github.com/1oid/Shell-Frameworkd)改写兼容
