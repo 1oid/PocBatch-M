@@ -1,7 +1,8 @@
-### Shell-Frameworkd
+### PocBatch-M
 ____
-* 简介:
-    > 插件化批量URL漏洞扫描器
+## 简介:
+    > 插件化批量URL漏洞扫描器/由[ShellFrameworkd](https://github.com/1oid/Shell-Frameworkd)改写兼容
+    > 文档移步[ShellFrameworkd的README.md](https://github.com/1oid/Shell-Frameworkd/blob/master/README.md)
 
 * 参数说明
 
@@ -22,7 +23,7 @@ ____
           -f FILENAME, --filename=FILENAME
                                 Read file
 
-* 实例
+## 实例
 > 使用baidu语法爬虫从搜索baidu搜索引擎抓取链接, 
 定义爬行1-10页,并使用插件metinfo_sql来对每个链接进行漏洞检测,
 并输出保存到metinfo_pass.txt
@@ -32,15 +33,13 @@ ____
 ![frameworkpng02](/png/02.png)
 
 ___
-* 说明: oshadan接口已废弃, 后采用zoomeye(开发ing)
-* 说明: 插件格式如下
-```
-# coding:utf-8
-
+## 说明: 移除oshadan, zoomeye
+## 说明: 插件格式如下
+```python
 class Exploit:
 
     def attack(self, url):
         '''do something'''
         return "format in the terminal."
 ```
-* 说明: 我搜集的插件之后将会放到另一个项目下.
+## 插件说明: [插件搜集](https://github.com/1oid/cms_poc_exp)
