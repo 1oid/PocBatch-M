@@ -130,7 +130,7 @@ def cmdparse(engine, keyword, page, plugin, list=None, output=None, filename=Non
         elif filename:
             with open(filename) as f:
                 lines = f.readlines()
-            map(lambda x: retspider.append(x.strip()), lines)
+            [retspider.append(x.strip()) for x in lines]
         else:
             logging.error("Error Engine! Retry!")
 
@@ -144,6 +144,7 @@ def cmdparse(engine, keyword, page, plugin, list=None, output=None, filename=Non
                 continue
             except requests.TooManyRedirects:
                 continue
+
 
 if __name__ == '__main__':
     from optparse import OptionParser
